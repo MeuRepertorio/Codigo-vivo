@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Meu cartão interativo</title>
+  <style>
+    :root{font-family:system-ui,sans-serif;color-scheme:dark}
+    body{min-height:100vh;margin:0;display:grid;place-items:center;padding:20px;background:#101e2f;color:white}
+    .card{width:min(100%,420px);padding:32px;border:1px solid #60788d;border-radius:25px;background:#20334a;box-shadow:0 18px 50px #0007}
+    .small{letter-spacing:.16em;text-transform:uppercase;color:#83ebc5;font-size:12px;font-weight:700}
+    h1{font-size:clamp(2rem,5vw,3rem);line-height:1.1}
+    p{color:#cadae6;line-height:1.7}
+    button{font:inherit;border:0;border-radius:12px;background:#88e9c9;color:#16382f;padding:12px 20px;cursor:pointer;font-weight:700}
+    button:focus-visible{outline:3px solid #fff;outline-offset:4px}
+    body.ativo{background:#f0f6f4;color:#102d28}body.ativo .card{background:#d9eee8;color:#102d28}
+    body.ativo p{color:#44675e}
+  </style>
+</head>
+<body>
+  <main class="card">
+    <div class="small">Meu projeto</div>
+    <h1>Eu construí isso.</h1>
+    <p>Este botão é um exemplo do JavaScript alterando a aparência definida pelo CSS.</p>
+    <button id="alternar" type="button">Alternar tema</button>
+  </main>
+  <script>
+    const botao=document.querySelector('#alternar');
+    botao.addEventListener('click',()=>document.body.classList.toggle('ativo'));
+  </script>
+</body>
+</html>
