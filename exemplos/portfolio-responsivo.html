@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Portfólio de projetos</title>
+  <style>
+    *{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;font-family:system-ui,sans-serif;background:#0f1c29;color:#f5f8fb;line-height:1.65}
+    .container{width:min(90%,1050px);margin:auto}
+    header{border-bottom:1px solid #ffffff30}header .container{display:flex;align-items:center;justify-content:space-between;gap:20px;flex-wrap:wrap;padding:23px 0}
+    nav{display:flex;gap:17px;flex-wrap:wrap}a{color:#7fe5c0}a:focus-visible{outline:3px solid white;outline-offset:5px}
+    .hero{padding:80px 0 60px}h1{font-size:clamp(2.6rem,8vw,5rem);line-height:1.07;letter-spacing:-.06em;margin:12px 0}h2{font-size:1.8rem}
+    .kicker{font-size:12px;color:#7fe5c0;font-weight:700;letter-spacing:.15em}.intro{color:#b9cad9;max-width:630px}
+    .grade{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:17px;margin:25px 0 70px}
+    article{padding:27px;background:#1c3144;border-radius:17px;border:1px solid #324b60}article h3{margin:0 0 10px}article p{color:#bdcddd}
+    footer{border-top:1px solid #ffffff29;padding:35px 0;color:#aebdce}
+  </style>
+</head>
+<body>
+  <header><div class="container"><strong>Meu portfólio</strong><nav aria-label="Principal"><a href="#projetos">Projetos</a><a href="#sobre">Sobre mim</a></nav></div></header>
+  <main class="container">
+    <section class="hero"><div class="kicker">CRIAÇÃO WEB</div><h1>Construindo ideias<br>com código.</h1><p class="intro">Minha evolução em HTML, CSS e JavaScript: da primeira página a projetos úteis.</p></section>
+    <section id="projetos" aria-labelledby="titulo-projetos"><h2 id="titulo-projetos">Projetos</h2><div class="grade"><article><h3>Meu mundo</h3><p>Uma página pessoal com meu estilo.</p></article><article><h3>Cartão interativo</h3><p>Experimento com JavaScript.</p></article><article><h3>Painel de hábitos</h3><p>Um app simples para a rotina.</p></article></div></section>
+    <section id="sobre" style="margin-bottom:80px"><h2>Sobre mim</h2><p>Aprendo construindo, testando e corrigindo erros.</p></section>
+  </main>
+  <footer><div class="container">Feito com HTML e CSS puro.</div></footer>
+</body>
+</html>
